@@ -1,0 +1,28 @@
+input,textarea{
+  margin-bottom: 10px;
+}
+.form-control.ng-invalid{
+  border: solid 3px red;
+}
+
+.form-control.ng-untouched.ng-invalid-required{
+  border: none;
+}
+
+.form-control.ng-dirty.ng-valid{
+  border: solid 3px green;
+}
+
+input[type="text"],
+input[type="email"]
+{
+  margin-bottom: 10px;
+}
+
+textarea{
+  margin-bottom: 10px;
+}
+
+div.well{
+  overflow: auto;
+}

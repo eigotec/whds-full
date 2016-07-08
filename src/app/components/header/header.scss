@@ -1,0 +1,21 @@
+/* LARGE */
+
+$lBlue: #9BDDFF;
+
+.navbar-inverse{
+  background-color: $lBlue;
+  border-color: #090909;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: #333;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+  background: #74b1dd;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+  background: #74b1dd;
+}

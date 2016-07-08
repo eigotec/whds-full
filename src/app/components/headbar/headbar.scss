@@ -1,0 +1,52 @@
+$lBlue: #9BDDFF;
+
+table.contactTable tr:first-child td{
+  border-top: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  hr{
+    margin-top: 0;
+  }
+  table.contactTable tr:first-child td{
+    border-top: none;
+  }
+  div.header hr.blueStripe{
+    margin-top:20px;
+  }
+  div.rightBlue{
+    border: 0;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  table.contactTable tr:first-child td{
+    border-top: none;
+  }
+  img hr{
+    margin-top: 20px;
+  }
+  .contactTable{
+    margin-bottom: 0;
+  }
+  hr{
+    margin: 20px 0;
+  }
+  .rightBlue{
+    border-right: 0;
+    min-height: 0 !important;
+  }
+  .blueStripe{
+    border-top: solid 5px $lBlue;
+  }
+  .surgery{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .headStripe{
+    display: none;
+  }
+}

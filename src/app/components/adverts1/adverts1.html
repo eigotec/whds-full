@@ -1,0 +1,9 @@
+<div ng-repeat="adverts in adverts1=(adverts1|orderBy:randomize1|limitTo:1)">
+    <div class="advert" ng-class="adverts.colour">
+        <span class="{{ adverts.icon }} icon"></span>
+        <h3>{{adverts.name}}</h3>
+        <div class="clear"></div>
+        <p class="description">{{ adverts.description }}</p>
+        <p class="price"><strong>{{ adverts.price }}</strong></p>
+    </div>
+</div>

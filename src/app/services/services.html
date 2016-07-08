@@ -1,0 +1,144 @@
+<header></header>
+<div class="container contentWrapper">
+  <headbar></headbar>
+  <banners></banners>
+
+  <div class="row">
+    <div class="col-lg-4 rightBlue">
+      <h1 class="title">Services</h1>
+      <p class="introText">To find out more about our products and services please click the <span class="glyphicon glyphicon-info-sign"></span> icon for more information</p>
+
+      <hr>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Dental Treatments <label for="check1" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" id="check1" ng-click="clickMe($event)" />
+        </div>
+        <div class="panel-body check1" ng-show="clickEvent == 'check1'">
+          <p>We offer a whole range of dental treatments. We always discuss any proposed treatment with you and provide a written estimate.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Prevention <label for="check2" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check2" /></div>
+        <div class="panel-body check2" ng-show="clickEvent == 'check2'">
+          <p>We aim to focus on preventative treatments so that our patients have healthy mouths, and ultimately less treatment. Regular visits to the hygienists are vital in maintain good oral health.</p>
+          <p>We recommend regular check-up's and advice for children which is provided for free under the NHS.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Emergency Treatment <label for="check3" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check3"/>
+        </div>
+        <div class="panel-body check3" ng-show="clickEvent == 'check3'">
+          <p>For our registered patients we provide out of hours service at the weekend. Please phone the emergency telephone number above for details</p>
+          <p>For emergency appointments during surgery time please phone <strong>01932 829500</strong></p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Tooth Whitening <label for="check5" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check5" /></div>
+        <div class="panel-body check5" ng-show="clickEvent == 'check5'">
+          <p>This is a simple, affective and painless way of improving your smile. We take impressions to provide you with custom made trays. The trays are used at home with a whitening compound.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Porcelain Veneers <label for="check6" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check6" /></div>
+        <div class="panel-body check6" ng-show="clickEvent == 'check6'">
+          <p>Porcelain Veneers are thin layers of porcelain which are bent over the front of natural teeth. They have a very natural appearance and can be used to alter the shape and colour of your teeth.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Crowns and Bridges <label for="check7" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check7" /></div>
+        <div class="panel-body check7" ng-show="clickEvent == 'check7'">
+          <p>Crowns can help improve the appearance of a discoloured or poorly shaped tooth. Crowns are often the best way of protecting leanly filled teeth from fracturing as they cover the tooth. The crown is carefully matched to the colour of the existing teeth.</p>
+          <p>A bridge replaces a missing tooth or teeth using the teeth on either side of the gap. In some instances an adhesive bridge can be provided which requires minimal tooth preparation.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Dentures <label for="check8" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" id="check8" ng-click="clickMe($event)" />
+        </div>
+        <div class="panel-body check8" ng-show="clickEvent == 'check8'">
+          <p>We can provide very natural looking dentures to replace missing teeth.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 rightBlue">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Tooth Coloured Fillings <label for="check9" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check9" /></div>
+        <div class="panel-body check9" ng-show="clickEvent == 'check9'">
+          <p>Old amalgam fillings can be replaced with tooth coloured filling materials.</p>
+          <p>We can also offer composite reneers which require little or no tooth preperation, to help enhance </p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Children <label for="check10" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check10"/>
+        </div>
+        <div class="panel-body check10" ng-show="clickEvent == 'check10'">
+          <p>We aim to offer children using the practice a positive experience. We encourage regular visits and are happy to offer advice on your childs oral health.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Healthy Gums <label for="check11" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" class="checkBox" id="check11"/></div>
+        <div class="panel-body check11" ng-show="clickEvent == 'check11'">
+          <p>The dental hygienists work closely together to help care for your teeth and gums. It is important to treat gum disease to prevent tooth loss.</p>
+          <p>The early stages of gum disease are often easy to treat, by affective and thorough cleaning of your teeth. We can help you achieve this.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Oral Cancer Check <label for="check12" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check12" /></div>
+        <div class="panel-body check12" ng-show="clickEvent == 'check12'">
+          <p>A routine dental examination plays an important part in the early detection of oral cancer. Mouth cancer is curable, small cancers are more easily treated.</p>
+          <p>Oral cancer represents 1% of all cancers in the UK and with around 4000 new cases reported each year in the UK the numbers are increasing.</p>
+          <p>The dentist will examine your whole mouth, checking your lips, cheeks, tongue, palate and throat to make sure that there are no changes in the tissue that which could indicate the onset of oral cancer.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Root Canal Treatment <label for="check13" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check13" /></div>
+        <div class="panel-body check13 bounceInDown" ng-show="clickEvent == 'check13'">
+          <p>Root canal treatment is a dental procedure used to treat infected nerve tissue within the tooth. It is carried out out under local anesthetic.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Nervous Patients <label for="check14" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check14" /></div>
+        <div class="panel-body check14" ng-show="clickEvent == 'check14'">
+          <p>We aim to make your appointments as plesant as possible for you by being kind and understanding. If you are particularly anxious please mention this to the dentist.</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Special Needs <label for="check15" class="glyphicon glyphicon-info-sign"></label>
+          <input type="checkbox" ng-click="clickMe($event)" id="check15" /></div>
+        <div class="panel-body check15" ng-show="clickEvent == 'check15'">
+          <p>We have a permanent ramp at the front entrance to our building and a ground floor surgery with easy wheelchair access.</p>
+        </div>
+      </div>
+
+    </div>
+    <rightcol></rightcol>
+  </div>
+  <hr>
+  <footer></footer>
+</div>

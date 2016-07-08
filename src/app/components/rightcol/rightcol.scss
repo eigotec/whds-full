@@ -1,0 +1,48 @@
+$lBlue: #9BDDFF;
+
+.map{
+  margin-bottom: 20px;
+}
+
+.rightBlue{
+  min-height: 700px;
+}
+
+@media screen and (max-width: 767px){
+  .btn-default{
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+  }
+  .googleMaps,.appleMaps{
+    max-width: 128px;
+  }
+  .appleMaps{
+    float: left;
+  }
+  .googleMaps{
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .blueStripe{
+    border-top: solid 5px $lBlue;
+  }
+  .rightBlue{
+    overflow: auto;
+    min-height: 0;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #mapsApps{
+    display: none;
+  }
+  .tableStripe{
+    display: none;
+  }
+  .rightBlue{
+    border-right: solid 5px $lBlue;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "appId": "whds",
+  "apiKey": "fe209790ae3f10a72725c43c3397759109f058926a2438212e33002d9e64a60f",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

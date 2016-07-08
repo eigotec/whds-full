@@ -1,0 +1,30 @@
+span.glyphicon.glyphicon-info-sign{
+  font-size: 18px;
+  float:right;
+  cursor: pointer;
+}
+
+.introText{
+  margin-bottom: 20px;
+  span.glyphicon.glyphicon-info-sign{
+    float: none;
+  }
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  left: -9999px;
+  float: right;
+  font-size: 18px;
+}
+
+label{
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.panel-body{
+  width: 350px;
+  overflow-y: hidden;
+}

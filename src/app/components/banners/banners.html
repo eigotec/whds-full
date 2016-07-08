@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-lg-12" ng-switch="status">
+        <div ng-switch-when="closed">
+            <div class="alert alert-danger">
+                The surgery is now closed. If you're a patient and require emergency care at the weekend or on bank holidays please call <strong>01932 829500</strong> or <strong>01932 229977</strong>
+            </div>
+        </div>
+        <div ng-switch-default>
+            <div class="alert alert-success">
+                Some positive message
+            </div>
+        </div>
+    </div>
+</div>

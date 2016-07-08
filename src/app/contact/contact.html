@@ -1,0 +1,57 @@
+<header></header>
+<div class="container contentWrapper">
+    <headbar></headbar>
+    <banners></banners>
+
+    <div class="row">
+        <div class="col-lg-8 rightBlue">
+            <h1 class="title">Contact</h1>
+            <p>The Windsor House Dental Surgery is best contacted by phone on 01932 829500 or 01932 229977. You can also use the form below to contact us for non-emergency cases. Please allow 48 hours for a response.</p>
+            <hr>
+
+            <div class="well">
+                <form name="contactForm" ng-submit="vm.submit()" novalidate>
+                    <div class="form-group">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" placeholder="Full name" name="name" ng-minlength="1" max="20"
+                                   ng-model="vm.data.name" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <input type="email" ng-minlength="1" placeholder="Email address" name="contactemail"
+                                   ng-model="vm.data.contactemail" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" ng-model="vm.data.subject" name="subject" ng-minlength="1" id=""
+                                   placeholder="Subject" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<textarea class="form-control" ng-model="vm.data.message" name="message" ng-minlength="1"
+                                      placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button type="submit" class="btn btn-primary" ng-disabled="!contactForm.$valid">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <adverts1></adverts1>
+                </div>
+                <div class="col-lg-6">
+                    <adverts2></adverts2>
+                </div>
+            </div>
+        </div>
+        <rightcol></rightcol>
+    </div>
+    <hr>
+    <footer></footer>
+</div>

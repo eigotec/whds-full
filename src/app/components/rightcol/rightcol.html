@@ -1,0 +1,56 @@
+<div class="col-lg-4 totalHeight">
+    <hr class="blueStripe tableStripe">
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th colspan="2">Opening times </th>
+        </tr>
+        <tr ng-switch on="status">
+            <td colspan="2" ng-switch-when="open">
+                <span>Currently:</span>
+                <button class="bg-success btn btn-sm">OPEN</button>
+            </td>
+            <td colspan="2" ng-switch-default>
+                <span>Currently:</span>
+                <button class="bg-danger btn btn-sm">CLOSED</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>08:00 - 17:00</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>08:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>08:00 - 17:00</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>08:00 - 17:00</td>
+        </tr>
+        <td>Friday</td>
+        <td>08:00 - 13:00</td>
+        <tr>
+            <td>Saturday</td>
+            <td>Closed<sup>*</sup></td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Closed<sup>*</sup></td>
+        </tr>
+    </table>
+    <hr class="blueStripe">
+    <div class="map" map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCGnf1-MVdCmzS092JML0XLwxN-WaYEuaw">
+        <ng-map center="20 Queens Rd, Hersham, Walton-on-Thames KT12 5LR" zoom="18">
+            <marker position="20 Queens Rd, Hersham, Walton-on-Thames KT12 5LR" animation="Animation.DROP" centered="true"></marker>
+        </ng-map>
+        <div id="mapsApps">
+            <h3>Open in Maps app</h3>
+            <hr class="blueStripe">
+            <a href="https://maps.apple.com/maps?address=Walton-on-Thames,%20KT12%205LR,%20England&ll=51.366537,-0.403507&q=Walton-on-Thames,%20KT12%205LR,%20England "><button class="btn btn-default">Open in Apple Maps</button></a>
+            <a href="https://www.google.co.uk/maps/place/Queens+Rd,+Hersham,+Walton-on-Thames,+Surrey+KT12+5LR/@51.3665373,-0.4035806,17z/data=!4m2!3m1!1s0x4876756b5b1a4b1d:0xd3d0f4adf5c833df"><button class="btn btn-default">Open in Google Maps</button></a>
+         </div>
+    </div>
+</div>
