@@ -12,12 +12,25 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+#toast-container{
+  z-index: 999999 !important;
+}
+
 $lBlue: #9BDDFF;
 
 body{
   line-height: 20px;
   background: url(../assets/images/blue.jpg) no-repeat;
   background-size: cover;
+}
+
+#kill{
+  margin: 300px auto;
+  color: #4d4d4d;
+  width: 100%;
+  width: 300px;
+  text-align: center;
+  height: 50px;
 }
 
 .contentWrapper{

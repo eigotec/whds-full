@@ -9,7 +9,7 @@
   function PricingController($rootScope,Page) {
     //var vm = this;
     $rootScope.Page = Page;
-    Page.setTitle('WHDS | Pricing');
+    Page.setTitle('Windsor House Dental Surgery | Pricing');
     Page.setDescription('Pricing for all our products and services');
   }
 })();

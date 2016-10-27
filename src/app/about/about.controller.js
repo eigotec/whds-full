@@ -9,7 +9,7 @@
   function AboutController($rootScope,Page) {
     //var vm = this;
     $rootScope.Page = Page;
-    Page.setTitle('WHDS | About');
+    Page.setTitle('Windsor House Dental Surgery | About');
     Page.setDescription('Information about the practice staff');
 
   }

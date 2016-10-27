@@ -8,7 +8,7 @@
   /** @ngInject */
   function ServicesController($rootScope,Page) {
 
-    Page.setTitle('WHDS | Services');
+    Page.setTitle('Windsor House Dental Surgery | Services');
     Page.setDescription('Information about the products and services we offer');
 
     $rootScope.Page = Page;

@@ -279,7 +279,7 @@
     .constant('toastrConfig', {
       allowHtml: false,
       autoDismiss: false,
-      closeButton: false,
+      closeButton: true,
       closeHtml: '<button>&times;</button>',
       containerId: 'toast-container',
       extendedTimeOut: 1000,

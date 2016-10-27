@@ -18,7 +18,7 @@
   /** @ngInject */
   function MainController($rootScope,Page) {
     $rootScope.Page = Page;
-    Page.setTitle('WHDS | Home');
+    Page.setTitle('Windsor House Dental Surgery | Home');
     Page.setDescription('Windsor House Dental Surgery Hersham');
   }
 })();

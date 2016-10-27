@@ -7,29 +7,36 @@
       .controller('ContactController', ContactController);
 
   /** @ngInject */
-  function ContactController($rootScope,Page,toastr,$log) {
-
+  function ContactController($rootScope,$stamplay,Page,toastr,$log) {
     var vm = this;
     vm.data = {};
 
     //$rootScope.data = vm;
 
-    vm.submit = function (Stamplay){
-      Stamplay.Object("contact")
+    vm.submit = function (){
+      $stamplay.Object("contact")
       .save(vm.data)
       .then(onSuccess, onError);
     };
 
     var onSuccess = function () {
-      toastr.success('Your message has been delivered!');
-    };
+      toastr.success("Thanks! We'll be in touch soon", {
+            closeButton: true,
+            progressBar: false
+          })
+      vm.data = {};
+      }
 
     var onError = function () {
-      toastr.error('Seems to be a problem');
-    };
+      toastr.error('Message not sent. Please contact the surgery', {
+        closeButton: true,
+        progressBar: false
+      })
+      vm.data = {};
+    }
 
     $rootScope.Page = Page;
-    Page.setTitle('WHDS | Contact');
+    Page.setTitle('Windsor House Dental Surgery | Contact');
     Page.setDescription('How to contact us here at the surgery');
 
     // FOR DEV

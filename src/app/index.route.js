@@ -6,7 +6,6 @@
     .config(routeConfig);
 
   function routeConfig($routeProvider,$locationProvider) {
-    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
@@ -31,11 +30,13 @@
       .when('/contact', {
         templateUrl: 'app/contact/contact.html',
         controller: 'ContactController',
-        controllerAs: 'vm'
+        controllerAs: 'contact'
         })
         .otherwise({
         redirectTo: '/'
       });
+      $locationProvider.html5Mode(true);
+      //$locationProvider.hashPrefix('!');
   }
 
 })();
