@@ -19,7 +19,7 @@
         return directive;
 
         /** @ngInject */
-        function RightColController($rootScope,$filter,$log,NgMap) {
+        function RightColController($rootScope,$filter,NgMap) {
             $rootScope.day = $filter('date')(new Date(),'EEEE');
             $rootScope.time = $filter('date')(new Date(),'HH:mm');
             $rootScope.date = $filter('date')(new Date(),'dd');
